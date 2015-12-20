@@ -238,6 +238,10 @@
         
   <div class="comments" id="comments">
     
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
   </div>
 
 
@@ -270,7 +274,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">publicações</span>
             </a>
           </div>
@@ -284,7 +288,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>
@@ -381,6 +385,27 @@
     
     
 
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'lelotnk';
+      var disqus_identifier = 'categorias/index.html';
+      var disqus_title = 'Categorias';
+      var disqus_url = 'http://127.0.0.1:4000/categorias/index.html';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
   
 
 

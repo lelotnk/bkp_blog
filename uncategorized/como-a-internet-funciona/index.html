@@ -1,0 +1,796 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="internet, web," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="Você sabe o que é a Internet? Como ela funciona? E a Web? Conhece?
+Se você está lendo isso aqui, provavelmente você deve utilizar muito a internet.A maioria das pessoas que a utilizam não fazem nem id">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como a internet funciona?">
+<meta property="og:url" content="http://127.0.0.1:4000/uncategorized/como-a-internet-funciona/index.html">
+<meta property="og:site_name" content="Marco Tanaka">
+<meta property="og:description" content="Você sabe o que é a Internet? Como ela funciona? E a Web? Conhece?
+Se você está lendo isso aqui, provavelmente você deve utilizar muito a internet.A maioria das pessoas que a utilizam não fazem nem id">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/earth-74015_1280.jpg">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/cloud294.gif">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/cat5-in-the-cradle-1532027.jpg">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/arquitetura-cliente-servidor.jpg">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/arquitetura-cliente-servidor-passo-a-passo.jpg">
+<meta property="og:updated_time" content="2015-12-20T02:54:21.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Como a internet funciona?">
+<meta name="twitter:description" content="Você sabe o que é a Internet? Como ela funciona? E a Web? Conhece?
+Se você está lendo isso aqui, provavelmente você deve utilizar muito a internet.A maioria das pessoas que a utilizam não fazem nem id">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> Como a internet funciona? | Marco Tanaka </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="pt">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/pt/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Marco Tanaka</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categorias" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categorias
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/sobre-o-blog" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            Sobre
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Arquivos
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Como a internet funciona?
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Postado em
+            <time itemprop="dateCreated" datetime="2015-12-15T00:07:50-02:00" content="15/12/2015">
+              15/12/2015
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/uncategorized/como-a-internet-funciona/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="uncategorized/como-a-internet-funciona/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+            &nbsp; | &nbsp;
+            <div class="fb-like" data-layout="button_count" data-share="true"></div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p><img src="/images/posts/earth-74015_1280.jpg" alt="Internet - Rede Mundial de Computadores"></p>
+<p>Você sabe o que é a Internet? Como ela funciona? E a Web? Conhece?</p>
+<p>Se você está lendo isso aqui, provavelmente você deve utilizar muito a internet.<br>A maioria das pessoas que a utilizam não fazem nem ideia de como ela funciona.<br>É como a energia elétrica em suas casas, todos sabem que é só ligar alguma coisa na tomada e pronto, vai funcionar.<br>Mas de onde vem essa energia? Como ela chega em minha casa? Bem, a internet é quase parecida com isso.</p>
+<a id="more"></a>
+<p>Para muitos, a primeira imagem que vem na cabeça ao pensar em Internet é esta:</p>
+<p><img src="/images/posts/cloud294.gif" alt="Nuvem"></p>
+<p>Mesmo que hoje em dia fala-se muito de <em><a href="https://pt.wikipedia.org/wiki/Computa%C3%A7%C3%A3o_em_nuvem" target="_blank" rel="external">Cloud Computing</a></em>, na verdade, ela não se parece em nada com isso.<br>A internet tem mais essa cara aqui:</p>
+<p><img src="/images/posts/cat5-in-the-cradle-1532027.jpg" alt="Cabo de Internet"></p>
+<p>Isso mesmo. Um cabo, ou um fio.</p>
+<p>A internet ganha toda sua força porque através desse cabo, dois ou mais computadores podem ser ligados e trocar informações entre si.<br>Isso é a internet, uma rede mundial de computadores interligados que se comunicam através de alguns protocolos, que são como acordos ou contratos que definem como a comunicação será regida.<br>Para ser um pouco mais correto, a internet é uma rede várias outras redes constituída por empresas privadas, públicas, acadêmicas e de governo.</p>
+<h2 id="A_hist_F3ria"><a href="#A_hist_F3ria" class="headerlink" title="A história"></a>A história</h2><p>A origem da internet data da década de 60. Surgiu a partir de pesquisas militares durante a Guerra Fria.<br>Nessa época duas grandes potencias, União Soviética e Estados Unidos, exerciam grande influência no mundo através de seus blocos ideológicos e politicamente antagônicos.</p>
+<p>Os Estados Unidos temiam um ataque, e qualquer inovação era bem vinda para proteger informações sigilosas a não serem trazidas a público. Então eles idealizaram um modelo de troca e compatilhamento de informações<br>que permitia a descentralização da informação. Assim se uma base militar fosse atingida as informações não seriam perdidas.<br>Assim nasceu a ARPANET, criada pela <em>Advanced Research Projects Agency</em> (ARPA).</p>
+<p>O ataque inimigo da União Soviética, teóricamente, nunca existiu. Mas o que o Departamento de Defesa dos Estados Unidos não imagiva era que acabara de criar o maior fenômeno midiático do século 20.<br>Um sistema de comunicação capaz de atingir cerca de 50 milhões de pessoas em 4 anos.</p>
+<p>Na década de 70 a tensão entre URSS e EUA diminuiu. Então o governo dos EUA permitiu os pesquisadores acadêmicos a utilizarem a ARPANET para que desenvolvessem suas pesquisas em suas respectivas universidades.<br>Com o crescente número de universidades utilizando a rede, o governo decidiu dividir o sistema em dois grupos: MILNET que possuia localidades militares, e a nova ARPANET com localidades não militares, que permitiu o desenvolvimento mais livre da rede, inclusive com a ajuda dos alunos.</p>
+<p>A partir daí a INTERNET foi surgindo e se desenvolvendo. Jovens da <a href="https://pt.wikipedia.org/wiki/Contracultura" target="_blank" rel="external">contracultura</a> movidos por uma <em>utopia</em> de difusão da informação tiveram um papel muito influente na criação dessa rede.<br>O governo dos Estados Unidos novamente investiu na internet, patrocinando o desenvolvimento de Backbones, que são como grandes computadores que tem uma capacidade poderosa de dar vazão a uma grande quantidade de fluxo de dados, como canais de fibra ótica, elos de satélite, ou elos de transmissão via rádio.</p>
+<p>Seja por interesses acadêmicos, militares, ou visando o grande potencial financeiro e rentável daquela novidade, a internet recebeu ajuda/influência de pesquisadores universitários como do MIT, de empresas privadas como a IBM, de políticos como o senador norte-americano Al Gore e também de estudantes.</p>
+<p>Bom, concluindo, a internet é uma grande infraestrutura de rede de computadores.<br>Porém o termo Internet e Web são frequentemente usados como sinônimos. É bastante comum ouvir alguém falar “navegar na internet”.<br>Enquanto a internet é a rede, a Web é apenas um dos muitos serviços que funcionam através da internet.<br>A Web é uma aplicação. Uma coleção de documentos (páginas web) e outros recursos como imagens, vídeos ou documentos pdf ligados por <em>hiperlinks</em> e URLs e acessados/consumidos por um programa de computador chamado <em>navegador</em>.<br>Além da Web existem outros serviços/aplicações que funcionam através da internet como e-mails, transferencia de arquivos, controle remoto de computador, jogos e etc.<br>A Web (World Wide Web ou WWW) foi criada em 1992 pelo cientista Tim Berners-Lee, do CERN (Organização Europeia para a Investigação Nuclear).</p>
+<h2 id="Ok_2C_ok-_Chega_de_Hist_F3ria-_Como_tudo_isso_realmente_funciona_3F"><a href="#Ok_2C_ok-_Chega_de_Hist_F3ria-_Como_tudo_isso_realmente_funciona_3F" class="headerlink" title="Ok, ok. Chega de História. Como tudo isso realmente funciona?"></a>Ok, ok. Chega de História. Como tudo isso realmente funciona?</h2><p>Bem, vamos lá.</p>
+<p>Imagine que você mora na casa de número <strong>187.10.145.12</strong> e na sua casa tem várias portas, uma delas é a porta <strong>64001</strong>.<br>E você quer pedir um pouco de açucar para o seu amigo que mora na casa <strong>173.194.118.33</strong> e você vai bater na porta <strong>80</strong>.<br>Se você precisa pedir açucar para o seu amigo, primeiro você precisa saber onde ele mora. E depois você precisa bater em alguma porta para chamá-lo.</p>
+<p>Com a internet é bem assim. Cada computador, celular, impressora ou qualquer outro dispositivo, ao se conectar numa rede como a internet recebe um endereço único, o IP.<br>Além desse IP, seu computador possui muitas portas por onde ele pode se comunicar com outro computador.<br>Então se o seu computador quer acessar e consumir o conteúdo do Google, por exemplo, ele precisa saber primeiro qual é o IP do Google e qual porta ele deve bater para pedir a informação.</p>
+<p>Essa comunicação entre o seu computador, que está consumindo a informação, e o outro computador que possui a informação a ser consumida, é chamada de arquitetura Cliente Servidor.<br>Onde Cliente é o seu computador, e Servidor é o computador que fornece a informação.</p>
+<p><img src="/images/posts/arquitetura-cliente-servidor.jpg" alt="Cliente Servidor" width="500"></p>
+<p>Ok, mas como eu vou saber qual é o IP e a porta do Google? Eu só digito www.google.com.br na barra do navegador e já funciona!</p>
+<h2 id="DNS_-_Domain_Name_System"><a href="#DNS_-_Domain_Name_System" class="headerlink" title="DNS - Domain Name System"></a>DNS - Domain Name System</h2><p>DNS, ou sistema de nomes de domínios, são como listas telefônicas. Todo computador ao ligar na internet está configurado a acessar um DNS.</p>
+<p>Então quando você digita www.google.com.br no seu navegador, você está informando a ele a URL (Uniform Resource Locator) do web site que você quer acessar, neste caso o Google.</p>
+<p>Então o seu navegador tenta lembrar se ele já conhece o endereço IP desse tal de Google, assim como você já sabe onde seu amigo do açucar mora pois você já precisou dele várias vezes, certo?</p>
+<p>Caso o seu navegador ainda não conheça o endereço do Google, ele se conecta ao DNS - Telefonista ;) - e pergunta qual o endereço do Google.</p>
+<blockquote>
+<p>- Olá, boa tarde. Eu gostaria de saber o endereço desse cara aqui: www.google.com.br<br>- Pois não, aguarda só um momentinho que estarei verificando senhor.<br>- […]<br>- […]<br>- […] (alguns milisegundos depois)<br>- Senhor, encontrei o endereço. Anota aí: <strong>173.194.118.33</strong><br>- Ok, obrigado.<br>- <del>O senhor pode aguardar e avaliar meu atendimento?</del> (Mentira)</p>
+</blockquote>
+<p>Bom, já temos o endereço IP do Google, mas e a porta?</p>
+<p>Bem, na verdade você não precisa saber qual a porta da casa do seu amigo para você ir lá, certo?<br>Afinal você já sabe em qual porta bater. A que está de frente pra rua, certo?<br>A não ser que você seja muito amigo, você não vai entrar numa propriedade privada, escolher qual porta bater e pensar: huum, acho que vou bater nessa porta dos fundos.<br>Você faria isso caso você tivesse uma permissão expressa do seu amigo, dizendo: Ei, da próxima vez entre pela porta da cozinha.</p>
+<p>Bem, na internet é mais ou menos isso. As portas são conhecidas.<br>Se você quer acessar uma página web, você vai bater na <code>porta 80</code>. Para transferir um arquivo, utilize a <code>porta 21</code>.<br>Para acessar um e-mail é <code>porta 25</code>, mas se você for um cara VIP, você pode talvez utilizar a <code>porta 587</code>.</p>
+<h2 id="TCP/IP_-_Os_Correios_da_Internet"><a href="#TCP/IP_-_Os_Correios_da_Internet" class="headerlink" title="TCP/IP - Os Correios da Internet"></a>TCP/IP - Os Correios da Internet</h2><p>Uma vez que os endereços são conhecidos, é preciso enviar a informação com o pedido/requisição e receber a resposta.<br>Mas como funciona essa troca de informação?</p>
+<blockquote>
+<p>- Olá amigo <strong>173.194.118.33</strong>, posso me conectar pela porta <strong>80</strong>?<br>- Fala aí <strong>187.10.145.12</strong>, claro que pode. Inicie a conexão.<br>- Ok, vou começar a conexao então.<br>Os pacotes começam a ser enviados…</p>
+</blockquote>
+<p>Bem, a responsabilidade de como essa conexão deve funcionar é dada ao <em>Protocolo TCP</em> (Protocolo de controle de transmissão). Ele define como a informação deve ser trafegada de forma confiável.<br>A informação é quebrada em vários pacotes e ele possui mecanismos para verificar se o pacote foi recebido ou não para que esses possam ser montados no destino, caso tenham saído de ordem durante o trânsito.<br>Ele não se preocupa com o que está sendo transferido. Apenas tenta garantir que as informações cheguem ao seu destino corretamente.</p>
+<p>Algumas características básicas dessa comunicação são:</p>
+<ul>
+<li>É uma comunicação de duas vias. O cliente fala com o servidor e o inverso é verdadeiro.</li>
+<li>Garantia de entrega, o que é enviado chegará ao destino corretamente. Na ordem correta e sem violações. É como se fosse uma carta registrada dos Correios.</li>
+<li>Controle de Fluxo, a quantidade de pacotes enviados aumenta ou diminui conforme a necessidade e a capacidade do destinatário.</li>
+</ul>
+<p>Ok, existe uma comunicação estabelecida, dados estão sendo trafegados pelo TCP.<br>Mas como acontece a mágica da Web? Como o servidor sabe qual página quero ver?<br>Como ocorre a comunicação do meu navegador com o servidor?</p>
+<h2 id="O_Protocolo_HTTP"><a href="#O_Protocolo_HTTP" class="headerlink" title="O Protocolo HTTP"></a>O Protocolo HTTP</h2><p>O protocolo HTTP (Hypertext Transfer Protocol) é quem define como vai funcionar a comunicação da aplicação web. Para que o HTTP possa transferir suas informações pela web, é necessário que os protocolos TCP e IP tornem possível a conexão entre clientes e servidor, levando e trazendo os pacotes. Lembra dos Correios?</p>
+<p>O HTTP possui algumas características básicas:</p>
+<ul>
+<li>Utiliza o modelo cliente-servidor, ou seja, o cliente requisita um documento e o servidor responde ou não com o documento solicitado.<blockquote>
+<p>Cliente: - Mãe, o que vai ter para o almoço?<br>Servidor: - Arroz, feijão e ovo.</p>
+</blockquote>
+</li>
+<li><p>Ele é <em>stateless</em>, ou seja, não guarda informações de requisições anteriores. É como se ele tivesse problemas de memória.</p>
+<blockquote>
+<p>Cliente: - Mãe, o que vai ter para o almoço?<br>Servidor: - Arroz, feijão e ovo.<br>Cliente: - Já está pronto?<br>Servidor: - Oi? Hein? Não entendi.</p>
+</blockquote>
+<p>  Com isso, ele não é capaz de reter informações entre as requisições. Para isso você deve utilizar <a href="https://pt.wikipedia.org/wiki/Cookie_HTTP" target="_blank" rel="external">cookies</a>, <a href="https://pt.wikipedia.org/wiki/Sess%C3%A3o_%28ci%C3%AAncia_da_computa%C3%A7%C3%A3o%29" target="_blank" rel="external">sessões</a>, campos de formulário ou variáveis na própria url.</p>
+<blockquote>
+<p>Cliente: - Mãe, o que vai ter para o almoço?<br>Servidor: - Arroz, feijão e ovo.<br>Cliente: - Mãe, o almoço com arroz, feijão e ovo já está pronto?<br>Servidor: - Está quase pronto.</p>
+</blockquote>
+</li>
+</ul>
+<p>Essa comunicação cliente-servidor é feita através de mensagens. O cliente envia uma mensagem de requisição, e o servidor retorna uma mensagem de resposta. Essas mensagens são compostas por um formato específico. É como um acordo de um idioma próprio. Esse idioma/acordo é definido pelo <a href="https://www.ietf.org/rfc/rfc2616.txt" target="_blank" rel="external">RFC</a>.</p>
+<p>Cada mensagem, seja de requisição ou resposta, possui uma linha inicial, nenhuma ou mais linhas de cabeçalho onde são informadas as opções, tipos e outras configurações necessárias. Obviamente também temos o corpo da mensagem que é opcional em determinados casos.</p>
+<p>Exemplo de uma requisição, onde é solicitada a página web.<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="request">GET <span class="string">/</span> HTTP/1.1</span></span><br><span class="line"><span class="attribute">Host</span>: <span class="string">www.google.com.br</span></span><br><span class="line"><span class="attribute">User-Agent</span>: <span class="string">Mozilla/5.0 (Windows NT 6.2; WOW64; rv:42.0) Gecko/20100101 Firefox/42.0</span></span><br><span class="line"><span class="attribute">Accept</span>: <span class="string">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span></span><br><span class="line"><span class="attribute">Accept-Language</span>: <span class="string">pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3</span></span><br><span class="line"><span class="attribute">Accept-Encoding</span>: <span class="string">gzip, deflate</span></span><br><span class="line"><span class="attribute">Connection</span>: <span class="string">keep-alive</span></span><br></pre></td></tr></table></figure></p>
+<p>Exemplo de resposta de uma página web.<br><figure class="highlight http"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="status">HTTP/1.x <span class="number">200</span> OK</span></span><br><span class="line"><span class="attribute">Date</span>: <span class="string">Fri, 04 May 2007 16:05:43 GMT</span></span><br><span class="line"><span class="attribute">Server</span>: <span class="string">Apache/2.0.59 (Unix) mod_ssl/2.0.59 OpenSSL/0.9.7a DAV/2 PHP/4.4.4 mod_bwlimited/1.4</span></span><br><span class="line"><span class="attribute">Cache-Control</span>: <span class="string">no-cache</span></span><br><span class="line"><span class="attribute">Keep-Alive</span>: <span class="string">timeout=3, max=100</span></span><br><span class="line"><span class="attribute">Connection</span>: <span class="string">Keep-Alive</span></span><br><span class="line"><span class="attribute">Transfer-Encoding</span>: <span class="string">chunked</span></span><br><span class="line"><span class="attribute">Content-Type</span>: <span class="string">text/html; charset=iso-8859-1</span></span><br><span class="line"></span><br><span class="line"><span class="apache"><span class="tag">&lt;html&gt;</span><span class="tag">&lt;/html&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>Hoje o HTTP está presente em muito de nossas vidas. Outras aplicações além do seu navegador ou de servidores web sabe falar e interpretar esse “idioma”. Desde ferramentas de linha de comando, sua smart tv, até seu smartphone sabem lidar com esse protocolo.</p>
+<p>Este é um diagrama que mostra o passo a passo de como a internet funciona:</p>
+<p><img src="/images/posts/arquitetura-cliente-servidor-passo-a-passo.jpg" alt="Diagrama de Sequencia - Cliente Servidor"></p>
+<p>É claro, existe muitos outros detalhes mais técnicos por traz dessa maravilha chamada internet.<br>Mas isso que tentei demonstrar é o básico para quem deseja trabalhar nessa área de desenvolvimento web.</p>
+<p>A compreensão desde conteúdo inicial ajudará no entendimento de outros conceitos mais relacionados ao desenvolvimento web. <strong>Bons estudos!</strong></p>
+<hr>
+<ul>
+<li>Imagens por <a href="https://pixabay.com/pt/service/terms/" target="_blank" rel="external">pixabay.com</a>;</li>
+<li>Icon made by <a href="http://www.freepik.com" title="Freepik" target="_blank" rel="external">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon" target="_blank" rel="external">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="external">CC BY 3.0</a></li>
+</ul>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/internet-web/" rel="tag">#internet, web</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/uncategorized/bem-vindo/" rel="next" title="Bem Vindo!">
+                <i class="fa fa-chevron-left"></i> Bem Vindo!
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Tabela de Conteúdo
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Visão Geral
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/default_avatar.jpg" alt="Marco Tanaka" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Marco Tanaka</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">Pensamentos, discussões e apredizados sobre desenvolvimento Web.</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">publicações</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categorias">
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">categorias</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://facebook.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-facebook"></i> Facebook
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#A_hist_F3ria"><span class="nav-number">1.</span> <span class="nav-text">A história</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ok_2C_ok-_Chega_de_Hist_F3ria-_Como_tudo_isso_realmente_funciona_3F"><span class="nav-number">2.</span> <span class="nav-text">Ok, ok. Chega de História. Como tudo isso realmente funciona?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DNS_-_Domain_Name_System"><span class="nav-number">3.</span> <span class="nav-text">DNS - Domain Name System</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP/IP_-_Os_Correios_da_Internet"><span class="nav-number">4.</span> <span class="nav-text">TCP/IP - Os Correios da Internet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#O_Protocolo_HTTP"><span class="nav-number">5.</span> <span class="nav-text">O Protocolo HTTP</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Marco Tanaka</span>
+</div>
+
+<div class="powered-by">
+  Desenvolvido com amor com <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Tema -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+    
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'lelotnk';
+      var disqus_identifier = 'uncategorized/como-a-internet-funciona/';
+      var disqus_title = 'Como a internet funciona?';
+      var disqus_url = 'http://127.0.0.1:4000/uncategorized/como-a-internet-funciona/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>
