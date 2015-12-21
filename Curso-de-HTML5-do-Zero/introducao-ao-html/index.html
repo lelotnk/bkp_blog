@@ -1,0 +1,866 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Curso de HTML Iniciante,HTML," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="O que você acha de aprender a programar aplicações Web? Sites? Jogos?
+O HTML é a linguagem mais falada na web. Quase tudo que você vê na web é escrito em HMTL. Se você tem interesse em começar no dese">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Introdução ao HTML">
+<meta property="og:url" content="http://127.0.0.1:4000/Curso-de-HTML5-do-Zero/introducao-ao-html/index.html">
+<meta property="og:site_name" content="Marco Tanaka">
+<meta property="og:description" content="O que você acha de aprender a programar aplicações Web? Sites? Jogos?
+O HTML é a linguagem mais falada na web. Quase tudo que você vê na web é escrito em HMTL. Se você tem interesse em começar no dese">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/curso-html/html-page.jpg">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/ff.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/chrome.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/safari.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/opera.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/sublime-text.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/notepad.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/curso-html/passo-1.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/curso-html/passo-2.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/curso-html/passo-3.png">
+<meta property="og:image" content="http://127.0.0.1:4000/images/posts/curso-html/passo-4.png">
+<meta property="og:updated_time" content="2015-12-21T01:31:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Introdução ao HTML">
+<meta name="twitter:description" content="O que você acha de aprender a programar aplicações Web? Sites? Jogos?
+O HTML é a linguagem mais falada na web. Quase tudo que você vê na web é escrito em HMTL. Se você tem interesse em começar no dese">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> Introdução ao HTML | Marco Tanaka </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="pt">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/pt/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-17838388-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Marco Tanaka</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categorias" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categorias
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/sobre-o-blog" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            Sobre
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Arquivos
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Introdução ao HTML
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Postado em
+            <time itemprop="dateCreated" datetime="2015-12-20T02:29:07-02:00" content="20/12/2015">
+              20/12/2015
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; Em
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Curso-de-HTML5-do-Zero/" itemprop="url" rel="index">
+                    <span itemprop="name">Curso de HTML5 do Zero!</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/Curso-de-HTML5-do-Zero/introducao-ao-html/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Curso-de-HTML5-do-Zero/introducao-ao-html/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+            &nbsp; | &nbsp;
+            <div class="fb-like" data-layout="button_count" data-share="true"></div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><div style="height: 300px; overflow: hidden;"><br>    <img src="/images/posts/curso-html/html-page.jpg" alt="Introdução do HTML"><br></div>
+
+<p>O que você acha de aprender a programar aplicações Web? Sites? Jogos?</p>
+<p>O HTML é a linguagem mais falada na web. Quase tudo que você vê na web é escrito em HMTL. Se você tem interesse em começar no desenvolvimento web do zero, a sua hora chegou! ;)</p>
+<p>Vamos começar uma série de aulas sobre o HTML5.</p>
+<p>Essa primeira aula é de introdução.<br>Você vai aprender o que é o HTML e como poderá fazer e testar os exercícios práticos em seu próprio computador.</p>
+<p>Então vá pegar uma xícara de café, sente-se confortavelmente e vamos começar!</p>
+<a id="more"></a>
+<h2 id="O_que__E9_o_HMTL_3F"><a href="#O_que__E9_o_HMTL_3F" class="headerlink" title="O que é o HMTL?"></a>O que é o HMTL?</h2><p>HTML é uma <strong>linguagem de marcação</strong> utilizada para descrever documentos web (Páginas Web ou Web Site).</p>
+<p>O nome HTML é uma abreviação da expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto.</p>
+<p><strong>Por que hipertexto?</strong><br>Hipertexto é um texto contém alguns tipos diferentes de informação como imagens, vídeos, sons ou outros arquivos. O acesso a esses tipos de informação se dá através de hiperlinks ou simplesmente links.</p>
+<p><strong>Mas o que é uma linguagem de marcação?</strong><br>Bem, Linguagens de Marcação são utilizadas para definir formatos, ou seja, uma maneira padronizada para exibir elementos em um documento.<br>Diferente das <em>linguagens de programação</em>, a de marcação não possui estruturas de controles condicionais ou de repetição e também não são capazes de realizar operações matemáticas.<br>As linguagens de marcação utilizam marcadores, mais conhecido como <strong>tags</strong>, para trazer um significado a um elemento que ao ser lido por um sistema ou programa capaz de entendê-lo, irá saber exatamente como esse elemento deve ser exibido visualmente.</p>
+<h2 id="TAGs_HTML"><a href="#TAGs_HTML" class="headerlink" title="TAGs HTML"></a>TAGs HTML</h2><p>Bom, já sabemos que um documento HTML é descrito por uma ou diversas <strong>tags</strong>, certo?</p>
+<p>Uma TAG é definida por uma <strong>palavra chave</strong> envolvida por <strong><a href="https://pt.wikipedia.org/wiki/Chevron_%28tipografia%29" target="_blank" rel="external">chevrons</a></strong>, mais conhecidos como sinais matemáticos <strong>menor que</strong> (&lt;) e <strong>maior que</strong> (&gt;).</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">palavrachave</span>&gt;</span>Conteúdo da TAG<span class="tag">&lt;/<span class="title">palavrachave</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Uma tag geralmente é escrita em par, como <code>&lt;p&gt;&lt;/p&gt;</code>;</li>
+<li>A primeira tag <code>&lt;p&gt;</code> é chamada de <em>tag de abertura</em>, e a segunda tag <code>&lt;/p&gt;</code>é chamada de <em>tag de fechamento</em>;</li>
+<li>O conteúdo da tag é escrito entre as tags de abertura e fechamento.</li>
+<li>A <em>tag de fechamento</em> é escrita exatamente igual a tag de abertura, porém com uma barra antes de seu nome: <code>&lt;/p&gt;</code>;</li>
+<li>O HTML não diferencia letras maiúsculas e minúsculas em suas tags. Portanto <code>&lt;P&gt;&lt;/P&gt;</code> funcionará exatamente igual a <code>&lt;p&gt;&lt;/p&gt;</code>. Porém é <strong>recomendado</strong> e amplamente utilizada a escrita minúscula em todas as tags de um documento;</li>
+</ul>
+<h2 id="Estrutura_b_E1sica_de_uma_p_E1gina_HTML"><a href="#Estrutura_b_E1sica_de_uma_p_E1gina_HTML" class="headerlink" title="Estrutura básica de uma página HTML"></a>Estrutura básica de uma página HTML</h2><p>Abaixo segue um exemplo de como é a estrutura básica de um documento HTML.<br>Vamos entender passo a passo, ok?</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">title</span>&gt;</span>Título da Página<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Meu Primeiro Título<span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">p</span>&gt;</span>Este é o meu primeiro parágrafo<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Explico:</p>
+<ul>
+<li><strong>DOCTYPE</strong> é a declaração que define o tipo/versão do documento HTML. Você verá outras versões diferentes do HTML5 mais abaixo. O importante aqui é saber que essa declaração deve ser a primeira coisa num documento HTML. Assim o seu navegador entenderá como ele deve renderizar as tags html do documento e exibi-las na tela.</li>
+<li><code>&lt;html&gt;&lt;/html&gt;</code> define o início e o fim de um documento HMTL. Tudo que estiver dentro dessas tags é o documento HTML propriamente dito.</li>
+<li><code>&lt;head&gt;&lt;/head&gt;</code> provê algumas informações sobre o documento. Essas informações são invisíveis na tela do navegador, mas são muito importantes.</li>
+<li><code>&lt;title&gt;&lt;/title&gt;</code> é uma das informações descritas no <code>&lt;head&gt;</code>. Essa tag define o título do documento.</li>
+<li><code>&lt;body&gt;&lt;/body&gt;</code> define o conteúdo visível do documento. É o que você está vendo na tela do navegador.</li>
+<li><code>&lt;h1&gt;&lt;/h1&gt;</code> é uma tag que define um título/cabeçalho do conteúdo do documento.</li>
+<li><code>&lt;p&gt;&lt;/p&gt;</code> é uma tag que define um parágrafo. Trocando seis por meia dúzia, o que você escrever dentro dessa tag, o navegador interpretará como um parágrafo de texto.</li>
+</ul>
+<p>Com essas poucas tags um navegador saberá que esse documento possui um título “<strong>Título da Página</strong>“ e possui um conteúdo com um cabeçalho e, logo após, um parágrafo.</p>
+<p>Existem centenas de outras tags que vamos aprender no decorrer das aulas.</p>
+<p>Abaixo é uma outra visualização da estrutura básica de um documento HTML.</p>
+<div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;<div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Título da Página&lt;/title&gt;</div>&lt;/head&gt;</div><div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">&lt;body&gt;<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;Meu Primeiro Título&lt;/h1&gt;</div><div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Este é o meu primeiro parágrafo.&lt;/p&gt;</div><div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Este também é um outro parágrafo&lt;/p&gt;</div>&lt;/body&gt;</div>&lt;/html&gt;</div>
+
+<h2 id="A_declara_E7_E3o_DOCTYPE"><a href="#A_declara_E7_E3o_DOCTYPE" class="headerlink" title="A declaração DOCTYPE"></a>A declaração DOCTYPE</h2><p>Como vimos antes, o DOCTYPE define o tipo/versão do documento web.<br>Isso porque existem outros tipos de documentos diferentes de HTML circulando por aí, e também em relação a versão, existem tags que são aceitas numa versão que não são aceitas em outra. E a maneira de escrever também pode mudar de versão para versão.<br>Então, para mostrar o conteúdo corretamente o navegador precisa saber de que tipo é o documento e qual a versão ele deve utilizar.</p>
+<h3 id="Tipos_mais_comuns_de_DOCTYPE"><a href="#Tipos_mais_comuns_de_DOCTYPE" class="headerlink" title="Tipos mais comuns de DOCTYPE"></a>Tipos mais comuns de DOCTYPE</h3><ul>
+<li><strong>HTML5</strong>:<br>  <code>&lt;!DOCTYPE html&gt;</code></li>
+<li><strong>HTML 4.01</strong>:<br>  <code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code></li>
+<li><strong>XHTML 1.0</strong>:<br>  <code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</code></li>
+</ul>
+<h3 id="Outras_vers_F5es_do_HTML"><a href="#Outras_vers_F5es_do_HTML" class="headerlink" title="Outras versões do HTML"></a>Outras versões do HTML</h3><ul>
+<li><strong>HTML</strong>: lançada em 1991</li>
+<li><strong>HTML 2.0</strong>: lançada em 1995</li>
+<li><strong>HTML 3.2</strong>: lançada em 1997</li>
+<li><strong>HTML 4.01</strong>: lançada em 1999</li>
+<li><strong>XHTML</strong>: lançada em 2000</li>
+<li><strong>HTML5</strong>: lançada em 2014</li>
+</ul>
+<p>Nessas aulas nós vamos trabalhar com a versão mais recente, o <strong>HTML5</strong>.</p>
+<h2 id="Ferramentas_necess_E1rias"><a href="#Ferramentas_necess_E1rias" class="headerlink" title="Ferramentas necessárias"></a>Ferramentas necessárias</h2><h3 id="Navegador"><a href="#Navegador" class="headerlink" title="Navegador"></a>Navegador</h3><p>A primeira coisa que você vai precisar é algo que você já está utilizando para ler isto aqui. Um navegador.</p>
+<p>Os mais conhecidos são:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><a href="http://www.mozilla.com/firefox/" target="_blank" rel="external">Mozila Firefox</a></th>
+<th style="text-align:center"><a href="https://www.google.com/chrome/browser/desktop/" target="_blank" rel="external">Google Chrome</a></th>
+<th style="text-align:center"><a href="http://www.apple.com/br/safari/" target="_blank" rel="external">Apple Safari</a></th>
+<th style="text-align:center"><a href="http://www.opera.com/browser/" target="_blank" rel="external">Opera</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="/images/posts/ff.png" alt="Mozilla Firefox"></td>
+<td style="text-align:center"><img src="/images/posts/chrome.png" alt="Google Chrome"></td>
+<td style="text-align:center"><img src="/images/posts/safari.png" alt="Apple Safari"></td>
+<td style="text-align:center"><img src="/images/posts/opera.png" alt="Opera"></td>
+</tr>
+</tbody>
+</table>
+<p>É importante que você possua vários, senão todos, navegadores para poder testar seus códigos pois existem algumas pequenas diferenças na rederização dos documentos de navegador para navegador.</p>
+<p>O Chrome é o que vou utilizar nessas aulas pois é o que, hoje, possui o melhor suporte a versão 5 do HTML.</p>
+<h3 id="Editor"><a href="#Editor" class="headerlink" title="Editor"></a>Editor</h3><p>Outra ferramenta necessária é um editor de texto. Existem muitas opções disponíveis, desde o mais simples até o mais profissional.</p>
+<p>É possível escrever HTML com editores nativos do seu sistema operacional, como o <strong>Bloco de Notas</strong> do Windows, o <strong>Gedit</strong> do Ubuntu ou o <strong>TextEdit</strong> do Mac.</p>
+<p>Também existem IDE’s, do inglês Integrated Development Environment, ou Ambiente de Desenvolvimento Integrado que é como um editor de texto porém com muitas outras ferramentas integradas para facilitar e agilizar o trabalho.</p>
+<p>Mas como estamos começando a estudar a linguagem, vamos utilizar um editor de texto que é nem tão simples como o Notepad ou TextEdit, e também nem tão complexo quanto uma IDE que faria algumas coisas automaticamente para você.</p>
+<p>Vou utilizar nessas aulas o Sublime Text, porém sugiro essas duas boas opções:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><a href="http://www.sublimetext.com/" target="_blank" rel="external">Sublime Text</a></th>
+<th style="text-align:center"><a href="https://notepad-plus-plus.org/" target="_blank" rel="external">Notepad++</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="http://www.sublimetext.com/" target="_blank" rel="external"><img src="/images/posts/sublime-text.png" alt="Sublime Text" width="100"></a></td>
+<td style="text-align:center"><a href="https://notepad-plus-plus.org/" target="_blank" rel="external"><img src="/images/posts/notepad.png" alt="Notepad++" width="100"></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Primeiro_Teste"><a href="#Primeiro_Teste" class="headerlink" title="Primeiro Teste"></a>Primeiro Teste</h2><p>Bom, vamos ao nosso primeiro teste para ver se está tudo Ok?</p>
+<h3 id="Abra_o_seu_editor"><a href="#Abra_o_seu_editor" class="headerlink" title="Abra o seu editor"></a>Abra o seu editor</h3><p>Como eu disse antes, aqui estou usando o Sublime Text 3.<br><img src="/images/posts/curso-html/passo-1.png" alt="Passo 1"></p>
+<h3 id="Escreva_algum_c_F3digo_HTML"><a href="#Escreva_algum_c_F3digo_HTML" class="headerlink" title="Escreva algum código HTML"></a>Escreva algum código HTML</h3><p><img src="/images/posts/curso-html/passo-2.png" alt="Passo 2"></p>
+<h3 id="Salve_o_documento_HTML"><a href="#Salve_o_documento_HTML" class="headerlink" title="Salve o documento HTML"></a>Salve o documento HTML</h3><p>Eu estou usando o sistema operacional OSX dos computadores Mac.<br>Mas na verdade não importa se é Windows, Mac ou Linux. O que você deve fazer é criar uma pasta, para deixar tudo organizado, e salvar o seu arquivo com a extensão <strong>.html</strong>.</p>
+<p>Vamos aproveitar aqui e fechar um acordo?</p>
+<ol>
+<li>Sempre utilize letras minúsculas em seus arquivos e pastas.</li>
+<li>Não utilize acentuação e troque espaços em branco por hífen. Assim “Arquivo Com Acentuação” ficaria “arquivo-com-acentuacao”.</li>
+</ol>
+<p>Isso não é uma regra rígida, porém é uma atitude altamente recomendada e utilizada pelos profissionais da área, evitando assim outras dores de cabeça quando algum sistema for ler o seu arquivo.<br><img src="/images/posts/curso-html/passo-3.png" alt="Passo 3"></p>
+<h3 id="Verifique_o_documento_no_navegador"><a href="#Verifique_o_documento_no_navegador" class="headerlink" title="Verifique o documento no navegador"></a>Verifique o documento no navegador</h3><p><img src="/images/posts/curso-html/passo-4.png" alt="Passo 4"></p>
+<p>Ok. Tudo funcionou como esperado, certo?<br>Se você encontrou algum problema com os caracteres do seu texto que possuem acentuação, não se preocupe. Isso é um problema de <strong>charset</strong> que vamos resolver em seguida ok?</p>
+<p>Por enquanto é só.</p>
+<p>Na próxima aula vamos falar sobre o <em>charset</em> e começar ver algumas tags básicas do HTML.</p>
+<p>Grande abraço, e bons estudos. ;)   </p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Curso-de-HTML-Iniciante/" rel="tag">#Curso de HTML Iniciante</a>
+          
+            <a href="/tags/HTML/" rel="tag">#HTML</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/uncategorized/como-a-internet-funciona/" rel="next" title="Como a internet funciona?">
+                <i class="fa fa-chevron-left"></i> Como a internet funciona?
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Curso-de-HTML5-do-Zero/aula-01-comecando-com-o-basico/" rel="prev" title="Aula 01 - Começando com o básico">
+                Aula 01 - Começando com o básico <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Tabela de Conteúdo
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Visão Geral
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/default_avatar.jpg" alt="Marco Tanaka" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Marco Tanaka</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">Conhecer, e prosseguir em conhecer. Este é o alvo da minha vida.</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">publicações</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categorias">
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">categorias</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://facebook.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-facebook"></i> Facebook
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#O_que__E9_o_HMTL_3F"><span class="nav-number">1.</span> <span class="nav-text">O que é o HMTL?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TAGs_HTML"><span class="nav-number">2.</span> <span class="nav-text">TAGs HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Estrutura_b_E1sica_de_uma_p_E1gina_HTML"><span class="nav-number">3.</span> <span class="nav-text">Estrutura básica de uma página HTML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A_declara_E7_E3o_DOCTYPE"><span class="nav-number">4.</span> <span class="nav-text">A declaração DOCTYPE</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tipos_mais_comuns_de_DOCTYPE"><span class="nav-number">4.1.</span> <span class="nav-text">Tipos mais comuns de DOCTYPE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Outras_vers_F5es_do_HTML"><span class="nav-number">4.2.</span> <span class="nav-text">Outras versões do HTML</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ferramentas_necess_E1rias"><span class="nav-number">5.</span> <span class="nav-text">Ferramentas necessárias</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Navegador"><span class="nav-number">5.1.</span> <span class="nav-text">Navegador</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Editor"><span class="nav-number">5.2.</span> <span class="nav-text">Editor</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Primeiro_Teste"><span class="nav-number">6.</span> <span class="nav-text">Primeiro Teste</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Abra_o_seu_editor"><span class="nav-number">6.1.</span> <span class="nav-text">Abra o seu editor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Escreva_algum_c_F3digo_HTML"><span class="nav-number">6.2.</span> <span class="nav-text">Escreva algum código HTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Salve_o_documento_HTML"><span class="nav-number">6.3.</span> <span class="nav-text">Salve o documento HTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Verifique_o_documento_no_navegador"><span class="nav-number">6.4.</span> <span class="nav-text">Verifique o documento no navegador</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Marco Tanaka</span>
+</div>
+
+<div class="powered-by">
+  Desenvolvido com amor com <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Tema -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+    
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'lelotnk';
+      var disqus_identifier = 'Curso-de-HTML5-do-Zero/introducao-ao-html/';
+      var disqus_title = 'Introdução ao HTML';
+      var disqus_url = 'http://127.0.0.1:4000/Curso-de-HTML5-do-Zero/introducao-ao-html/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>
