@@ -1,0 +1,881 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Curso de HTML Iniciante,HTML," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="Um parágrafo é definido através da tag &amp;lt;p&amp;gt;. A utilização é extremamente simples. Vamos lá.
+1&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vel hic voluptas repudiandae dig">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Parágrafos HTML, Estilos e Formatação">
+<meta property="og:url" content="http://127.0.0.1:4000/Curso-de-HTML5-do-Zero/paragrafos-estilos-e-formatacao/index.html">
+<meta property="og:site_name" content="Marco Tanaka">
+<meta property="og:description" content="Um parágrafo é definido através da tag &amp;lt;p&amp;gt;. A utilização é extremamente simples. Vamos lá.
+1&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vel hic voluptas repudiandae dig">
+<meta property="og:updated_time" content="2016-01-09T03:54:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Parágrafos HTML, Estilos e Formatação">
+<meta name="twitter:description" content="Um parágrafo é definido através da tag &amp;lt;p&amp;gt;. A utilização é extremamente simples. Vamos lá.
+1&amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vel hic voluptas repudiandae dig">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> Parágrafos HTML, Estilos e Formatação | Marco Tanaka </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="pt">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/pt/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-17838388-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Marco Tanaka</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categorias" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            Categorias
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/sobre-o-blog" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            Sobre
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            Arquivos
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Parágrafos HTML, Estilos e Formatação
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            Postado em
+            <time itemprop="dateCreated" datetime="2016-01-08T19:51:26-02:00" content="08/01/2016">
+              08/01/2016
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; Em
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Curso-de-HTML5-do-Zero/" itemprop="url" rel="index">
+                    <span itemprop="name">Curso de HTML5 do Zero!</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/Curso-de-HTML5-do-Zero/paragrafos-estilos-e-formatacao/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Curso-de-HTML5-do-Zero/paragrafos-estilos-e-formatacao/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+            
+          
+
+          
+            &nbsp; | &nbsp;
+            <div class="fb-like" data-layout="button_count" data-share="true"></div>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>Um parágrafo é definido através da tag <code>&lt;p&gt;</code>. A utilização é extremamente simples. Vamos lá.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit. Id vel hic voluptas repudiandae dignissimos quod, neque quo possimus mollitia veniam tenetur, atque maxime porro. Id cum sapiente, commodi ad asperiores.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vel hic voluptas repudiandae dignissimos quod, neque quo possimus mollitia veniam tenetur, atque maxime porro. Id cum sapiente, commodi ad asperiores.</p>
+
+</blockquote>
+<p>Se tratando de parágrafos, você nunca terá certeza de como ele será renderizado na tela em relação às quebras de linhas.<br>Isso por que o texto é ajustado na tela de acordo com o tamanho de espaço disponível para ele. Portanto em telas pequenas ele ser encaixará de uma maneira, e em telas grandes de outra.</p>
+<p>Vamos continuar que temos mais coisas para ver sobre parágrafos.</p>
+<a id="more"></a>
+<h2 id="Quebra_de_linha"><a href="#Quebra_de_linha" class="headerlink" title="Quebra de linha"></a>Quebra de linha</h2><p>Se você quiser forçar uma quebra de linha, utilize a tag <code>&lt;br&gt;</code>. Essa tag não possui o seu par de fechamento. É um elemento vazio.</p>
+<p>Veja:</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit.&lt;br&gt;Id vel hic voluptas repudiandae dignissimos quod, neque quo possimus mollitia veniam tenetur, atque maxime porro.&lt;br&gt;Id cum sapiente, commodi ad asperiores.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Id vel hic voluptas repudiandae dignissimos quod, neque quo possimus mollitia veniam tenetur, atque maxime porro.<br>Id cum sapiente, commodi ad asperiores.</p>
+
+</blockquote>
+<p>Mas qual a diferença entre quebrar linha com dois parágrafos (<code>&lt;p&gt;</code>) ou com um <code>&lt;br&gt;</code>?</p>
+<p>Bem, além de ser preciso considerar a semântica do texto, os navegadores adicionam por padrão uma margem nas tags <code>&lt;p&gt;</code> que não existe nas tags <code>&lt;br&gt;</code>. A diferença visual fica assim:</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit.&lt;br&gt;Id vel hic voluptas repudiandae dignissimos quod, neque quo possimus mollitia veniam tenetur, atque maxime porro.&lt;br&gt;Id cum sapiente, commodi ad asperiores.&lt;/p&gt;</span></span><br><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit.&lt;br&gt;Id vel hic voluptas repudiandae dignissimos quod, neque quo possimus mollitia veniam tenetur, atque maxime porro.&lt;br&gt;Id cum sapiente, commodi ad asperiores.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Id vel hic voluptas repudiandae dignissimos quod, neque quo possimus mollitia veniam tenetur, atque maxime porro.<br>Id cum sapiente, commodi ad asperiores.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Id vel hic voluptas repudiandae dignissimos quod, neque quo possimus mollitia veniam tenetur, atque maxime porro.<br>Id cum sapiente, commodi ad asperiores.</p>
+
+</blockquote>
+<h2 id="A_Pr_E9-formata_E7_E3o__26lt_3Bpre_26gt_3B"><a href="#A_Pr_E9-formata_E7_E3o__26lt_3Bpre_26gt_3B" class="headerlink" title="A Pré-formatação &lt;pre&gt;"></a>A Pré-formatação <code>&lt;pre&gt;</code></h2><p>Os navegadores ignoram a formatação do seu parágrafo quando você utiliza mais de um espaço em branco, ou suas quebras de linha.</p>
+<p>Veja esse exemplo utilizando um poema de Mário Quintana.</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Eu, agora       -         <span class="keyword">que</span> desfecho!</span><br><span class="line">Já nem penso           mais em ti...</span><br><span class="line">Mas será          <span class="keyword">que</span> nunca deixo</span><br><span class="line"><span class="keyword">De</span> lembrar           <span class="keyword">que</span> <span class="keyword">te</span> esqueci?&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>Resultado:</p>
+<blockquote>
+<p>Eu, agora - que desfecho! Já nem penso mais em ti… Mas será que nunca deixo De lembrar que te esqueci?</p>
+
+</blockquote>
+<p>Agora, utilizando a tag <code>&lt;pre&gt;</code> que renderiza o conteúdo considerando a pré-formatação do texto:</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;pre&gt;</span><br><span class="line">    Eu, agora       -         <span class="keyword">que</span> desfecho!</span><br><span class="line">    Já nem penso           mais em ti...</span><br><span class="line">    Mas será          <span class="keyword">que</span> nunca deixo</span><br><span class="line">    <span class="keyword">De</span> lembrar           <span class="keyword">que</span> <span class="keyword">te</span> esqueci?</span><br><span class="line">&lt;/pre&gt;</span><br></pre></td></tr></table></figure>
+<p>Resultado:</p>
+<blockquote>
+<pre>
+    Eu, agora       -         que desfecho!
+    Já nem penso           mais em ti...
+    Mas será          que nunca deixo
+    De lembrar           que te esqueci?
+</pre>
+
+</blockquote>
+<p>Percebeu a diferença? A tag <code>&lt;pre&gt;</code> considera todos os espaços e quebras de linha utilizados no conteúdo.</p>
+<h2 id="Formata_E7_E3o_de_texto"><a href="#Formata_E7_E3o_de_texto" class="headerlink" title="Formatação de texto"></a>Formatação de texto</h2><p>Você pode querer utilizar alguma formatação diferente em seu texto.<br>Algumas regras de estilo deverão ser colocadas através de CSS, como veremos no próximo item desta aula.</p>
+<p>Mas o HTML tem algumas tags próprias que formatam um texto que possua um significado especial.</p>
+<p>As opções em HTML são:</p>
+<h3 id="Negrito"><a href="#Negrito" class="headerlink" title="Negrito"></a>Negrito</h3><p>O elemento <code>&lt;b&gt;</code> define um conteúdo em negrito, porém sem uma ênfase semântica.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, &lt;b&gt;consectetur adipisicing elit&lt;/b&gt;. Unde, explicabo.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing elit</b>. Unde, explicabo.</p>
+
+</blockquote>
+<p>Porém, também temos o elemento <code>&lt;strong&gt;</code> que define um conteúdo em negrito. Mas este com uma ênfase ou importância semântica maior. Ou seja, se algum leitor de tela, ou um mecanismo de busca ler esse texto, entenderá que este conteúdo destacado tem uma relevância maior e não apenas um destaque meramente visual.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, &lt;strong&gt;consectetur adipisicing elit&lt;/strong&gt;. Unde, explicabo.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>. Unde, explicabo.</p>
+
+</blockquote>
+<h3 id="It_E1lico"><a href="#It_E1lico" class="headerlink" title="Itálico"></a>Itálico</h3><p>O elemento <code>&lt;i&gt;</code> define um texto em itálico, porém sem uma ênfase semântica.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, &lt;i&gt;consectetur adipisicing elit&lt;/i&gt;. Unde, explicabo.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, <i>consectetur adipisicing elit</i>. Unde, explicabo.</p>
+
+
+</blockquote>
+<p>Já o elemento <code>&lt;em&gt;</code>, assim como o <code>&lt;strong&gt;</code>, possui uma ênfase semântica e também define um conteúdo com formatação em itálico. O resultado visual é o mesmo, mas a importância semântica é maior.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, &lt;em&gt;consectetur adipisicing elit&lt;/em&gt;. Unde, explicabo.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>. Unde, explicabo.</p>
+
+</blockquote>
+<h3 id="O_elemento_Small"><a href="#O_elemento_Small" class="headerlink" title="O elemento Small"></a>O elemento Small</h3><p>O elemento <code>&lt;small&gt;</code> define um conteúdo de texto visualmente menor que o normal. Muito utilizado para breves descrições ou subtítulos.</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Meu Título<span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;<span class="title">small</span>&gt;</span>com um breve subtítulo<span class="tag">&lt;/<span class="title">small</span>&gt;</span><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<h1 class="no-nav">Meu Título<br><small>com um breve subtítulo</small></h1>
+
+</blockquote>
+<h3 id="Destacando_um_texto"><a href="#Destacando_um_texto" class="headerlink" title="Destacando um texto"></a>Destacando um texto</h3><p>O elemento <code>&lt;mark&gt;</code> define um conteúdo destacado. Veja:</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, &lt;mark&gt;consectetur adipisicing elit&lt;/mark&gt;. Laudantium, quasi.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, <mark>consectetur adipisicing elit</mark>. Laudantium, quasi.</p>
+
+</blockquote>
+<h3 id="Conte_FAdo_deletado_e_inserido"><a href="#Conte_FAdo_deletado_e_inserido" class="headerlink" title="Conteúdo deletado e inserido"></a>Conteúdo deletado e inserido</h3><p>O elemento <code>&lt;del&gt;</code> define um conteúdo que foi deletado, enquanto que o elemento <code>&lt;ins&gt;</code> define um conteúdo que foi inserido.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Lo<span class="comment">rem ipsum dolor sit amet, &lt;del&gt;consectetur adipisicing elit.&lt;/del&gt; &lt;ins&gt;laudantium quasi.&lt;/ins&gt;&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, <del>consectetur adipisicing elit.</del> <ins>laudantium quasi.</ins>ins&gt;</p>
+
+</blockquote>
+<h3 id="Subscrito_e_Sobrescrito"><a href="#Subscrito_e_Sobrescrito" class="headerlink" title="Subscrito e Sobrescrito"></a>Subscrito e Sobrescrito</h3><p>O elemento <code>&lt;sub&gt;</code> define um conteúdo subscrito e o elemento <code>&lt;sup&gt;</code> um conteúdo sobrescrito.</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">&lt;p&gt;</span><span class="keyword">log</span><span class="variable">&lt;sub&gt;</span>b<span class="variable">&lt;/sub&gt;</span> a = x    <span class="variable">&lt;=&gt;</span>    b<span class="variable">&lt;sup&gt;</span>x<span class="variable">&lt;/sup&gt;</span> = a<span class="variable">&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>log<sub>b</sub> a = x &lt;=&gt; b<sup>x</sup> = a</p>
+
+</blockquote>
+<h2 id="Um_pouco_de_estilos"><a href="#Um_pouco_de_estilos" class="headerlink" title="Um pouco de estilos"></a>Um pouco de estilos</h2><p>Como eu disse antes, algumas regras de formatação que são visuais devem ser inseridas através de CSS. Que é uma linguagem de estilos e é mais apropriada para essa tarefa.<br>Um estilo em texto pode ser adicionado através do atributo <code>style=&quot;&quot;</code> onde você determina uma regra de CSS.<br>Veremos muito mais sobre CSS mais tarde, mas o básico sobre textos é o que veremos agora:</p>
+<h3 id="Cor_de_Background"><a href="#Cor_de_Background" class="headerlink" title="Cor de Background"></a>Cor de Background</h3><p>A propriedade de CSS <code>background-color</code> define a cor de fundo de qualquer elemento HTML, e portanto, também pode ser usada em parágrafos.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style="background-<span class="built_in">color</span>: #DDFFE9;"&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p style="background-color: #DDFFE9;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.</p>
+
+</blockquote>
+<p>“#DDFFE9” é a cor hexadecimal que representa esse verde claro que você vê no parágrafo acima. Veremos mais sobre cores hexadecimais mais tarde.</p>
+<h3 id="Cor_de_texto"><a href="#Cor_de_texto" class="headerlink" title="Cor de texto"></a>Cor de texto</h3><p>Para definir a cor de um texto, utilize a propriedade <code>color</code> de CSS.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style="<span class="built_in">color</span>: red;"&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.</p>
+
+</blockquote>
+<h3 id="Fonte_do_texto"><a href="#Fonte_do_texto" class="headerlink" title="Fonte do texto"></a>Fonte do texto</h3><p>Caso você queira alterar a fonte do seu texto, utilize a propriedade <code>font-family</code>. Veja:</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style="font-family: cursive;"&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.&lt;/p&gt;</span></span><br><span class="line">&lt;p style="font-family: Courier;"&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p style="font-family: cursive;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.</p><p style="font-family: Courier;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.</p>
+
+</blockquote>
+<h3 id="Tamanho_do_Texto"><a href="#Tamanho_do_Texto" class="headerlink" title="Tamanho do Texto"></a>Tamanho do Texto</h3><p>Utilize a propriedade <code>font-size</code> para alterar o tamanho do seu texto.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style="font-size: <span class="number">150</span>%;"&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p style="font-size: 150%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, laudantium.</p>
+
+</blockquote>
+<h3 id="Alinhamento_de_Texto"><a href="#Alinhamento_de_Texto" class="headerlink" title="Alinhamento de Texto"></a>Alinhamento de Texto</h3><p>Para alinha um texto, utilize a propriedade <code>text-align</code>.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style="text-align: right"&gt;Lo<span class="comment">rem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente porro facilis quasi delectus pariatur dolorum veritatis voluptatibus explicabo illo nemo.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p style="text-align: right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente porro facilis quasi delectus pariatur dolorum veritatis voluptatibus explicabo illo nemo.</p>
+
+</blockquote>
+<p>Teste as opções de valores da propriedade: <code>left</code>, <code>right</code>, <code>center</code> e <code>justify</code>.</p>
+<h3 id="Mais_regras"><a href="#Mais_regras" class="headerlink" title="Mais regras"></a>Mais regras</h3><p>Para adicionar mais de uma propriedade CSS ao mesmo elemento, separe as declarações com ponto-e-vírgula.</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style="text-align: center; font-size: <span class="number">90</span>%; <span class="built_in">color</span>: blue; font-family: Courier;"&gt;Lo<span class="comment">rem ipsum dolor sit amet, &lt;strong&gt;consectetur adipisicing elit&lt;/strong&gt;. Sapiente porro facilis quasi delectus pariatur &lt;em&gt;dolorum veritatis&lt;/em&gt; voluptatibus explicabo illo nemo.&lt;/p&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p style="text-align: center; font-size: 90%; color: blue; font-family: Courier;">Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>. Sapiente porro facilis quasi delectus pariatur <em>dolorum veritatis</em> voluptatibus explicabo illo nemo.</p>
+
+</blockquote>
+<hr>
+<p>Bom pessoal, por enquanto é só o que temos sobre parágrafos.<br>Vamos ver muito mais regras de CSS e outras tags de HTML.</p>
+<p>Acompanhe os próximos capítulos dessa série.</p>
+<p>Qualquer dúvida, sugestão ou crítica, comente abaixo ok?</p>
+<p>Abraço!</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Curso-de-HTML-Iniciante/" rel="tag">#Curso de HTML Iniciante</a>
+          
+            <a href="/tags/HTML/" rel="tag">#HTML</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Curso-de-HTML5-do-Zero/aula-02-cabecalho/" rel="next" title="Aula 02 - Cabeçalho HTML">
+                <i class="fa fa-chevron-left"></i> Aula 02 - Cabeçalho HTML
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Tabela de Conteúdo
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Visão Geral
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/default_avatar.jpg" alt="Marco Tanaka" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Marco Tanaka</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">Conhecer, e prosseguir em conhecer. Este é o alvo da minha vida.</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">publicações</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categorias">
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">categorias</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">tags</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://facebook.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-facebook"></i> Facebook
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/lelotnk" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quebra_de_linha"><span class="nav-number">1.</span> <span class="nav-text">Quebra de linha</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A_Pr_E9-formata_E7_E3o__26lt_3Bpre_26gt_3B"><span class="nav-number">2.</span> <span class="nav-text">A Pré-formatação <pre></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Formata_E7_E3o_de_texto"><span class="nav-number">3.</span> <span class="nav-text">Formatação de texto</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Negrito"><span class="nav-number">3.1.</span> <span class="nav-text">Negrito</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#It_E1lico"><span class="nav-number">3.2.</span> <span class="nav-text">Itálico</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#O_elemento_Small"><span class="nav-number">3.3.</span> <span class="nav-text">O elemento Small</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Destacando_um_texto"><span class="nav-number">3.4.</span> <span class="nav-text">Destacando um texto</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Conte_FAdo_deletado_e_inserido"><span class="nav-number">3.5.</span> <span class="nav-text">Conteúdo deletado e inserido</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Subscrito_e_Sobrescrito"><span class="nav-number">3.6.</span> <span class="nav-text">Subscrito e Sobrescrito</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Um_pouco_de_estilos"><span class="nav-number">4.</span> <span class="nav-text">Um pouco de estilos</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Cor_de_Background"><span class="nav-number">4.1.</span> <span class="nav-text">Cor de Background</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cor_de_texto"><span class="nav-number">4.2.</span> <span class="nav-text">Cor de texto</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fonte_do_texto"><span class="nav-number">4.3.</span> <span class="nav-text">Fonte do texto</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tamanho_do_Texto"><span class="nav-number">4.4.</span> <span class="nav-text">Tamanho do Texto</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Alinhamento_de_Texto"><span class="nav-number">4.5.</span> <span class="nav-text">Alinhamento de Texto</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mais_regras"><span class="nav-number">4.6.</span> <span class="nav-text">Mais regras</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Marco Tanaka</span>
+</div>
+
+<div class="powered-by">
+  Desenvolvido com amor com <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Tema -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+    
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'lelotnk';
+      var disqus_identifier = 'Curso-de-HTML5-do-Zero/paragrafos-estilos-e-formatacao/';
+      var disqus_title = 'Parágrafos HTML, Estilos e Formatação';
+      var disqus_url = 'http://127.0.0.1:4000/Curso-de-HTML5-do-Zero/paragrafos-estilos-e-formatacao/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>
